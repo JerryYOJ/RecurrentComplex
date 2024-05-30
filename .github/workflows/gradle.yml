@@ -30,7 +30,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Gradle Wrapper
-      run: ./gradlew build
+      run: ./gradlew --scan build
     
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.3
