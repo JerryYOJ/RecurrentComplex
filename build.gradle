@@ -68,7 +68,6 @@ configurations {
 
 repositories {
     mavenLocal()
-    mavenCentral() // for other dependencies from remote repositories
     flatDir {
         dirs '.' // directory containing your local JAR files
     }
