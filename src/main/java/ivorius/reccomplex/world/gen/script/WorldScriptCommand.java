@@ -96,7 +96,7 @@ public class WorldScriptCommand implements WorldScript<NBTNone>
                 if (entry.command.trim().isEmpty())
                     return;
 
-                RecurrentComplex.logger.info("[RCC] executing command " + entry.command);
+                RecurrentComplex.logger.info("[RCC] executing command " + entry.command + " isAnvilFileSet():" + context.environment.world.getMinecraftServer().isAnvilFileSet() + " isCommandBlockEnabled():" + context.environment.world.getMinecraftServer().isCommandBlockEnabled());
                 
                 SpawnCommandLogic logic = new SpawnCommandLogic()
                 {
