@@ -96,6 +96,8 @@ public class WorldScriptCommand implements WorldScript<NBTNone>
                 if (entry.command.trim().isEmpty())
                     return;
 
+                RecurrentComplex.logger.info("executing command '%s'", entry.command);
+                
                 SpawnCommandLogic logic = new SpawnCommandLogic()
                 {
                     @Override
